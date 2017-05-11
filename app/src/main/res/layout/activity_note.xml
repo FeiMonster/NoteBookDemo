@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#F8F8FF"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_wenzi"
+                android:src="@drawable/text"
+                android:layout_width="46dp"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:text="文字"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="25dp"
+        android:orientation="horizontal"
+        android:background="#F8F8FF"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_take"
+                android:src="@drawable/take"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:text="拍照"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_check"
+                android:src="@drawable/pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:text="图片"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_home"
+                android:src="@drawable/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:text="主页"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_save"
+                android:src="@drawable/wenzi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:text="保存"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:background="@null"
+            android:id="@+id/edt_titles"
+            android:hint="请输入您的标题"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#838B8B"
+            android:layout_marginBottom="10dp"
+            android:text="_______________________________________________________"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="456dp">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_pic"
+            android:layout_weight="0.89"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="@null"
+            android:id="@+id/edt_text"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07" />
+    </LinearLayout>
+
+</LinearLayout>
